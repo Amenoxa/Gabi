@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="550" height="373" viewBox="0 0 550 373">
+  <defs>
+    <clipPath id="clip-rower_rama">
+      <rect width="550" height="373"/>
+    </clipPath>
+  </defs>
+  <g id="rower_rama" clip-path="url(#clip-rower_rama)">
+    <g id="ROWER" transform="translate(-394.281 -219)">
+      <g id="rower-2" data-name="rower" transform="translate(238 -46.492)">
+        <g id="rama" transform="translate(203.016 296.554)">
+          <path id="Path_5" data-name="Path 5" d="M473.3,291.893,346.232,30.909A22.746,22.746,0,0,0,326.087,19H250.579c-12.519,0-22.652,9.817-22.652,21.945S238.06,62.89,250.579,62.89h61.675l46.6,87.78H226.824L195.337,89.648A22.768,22.768,0,0,0,175.071,77.52H99.563c-12.519,0-22.652,9.817-22.652,21.945S87.044,121.41,99.563,121.41h61.509l21.2,41.081L24.811,287.3a21.53,21.53,0,0,0-6.992,24.374,22.62,22.62,0,0,0,21.338,14.557H250.579a23.07,23.07,0,0,0,16.023-6.423L386.825,203.337l46.2,108.628a22.754,22.754,0,0,0,20.16,11.909,23.215,23.215,0,0,0,10.345-2.443A21.6,21.6,0,0,0,473.3,291.893Zm-370.687-9.554,100.425-79.6,40.11,77.714-1.948,1.887Zm174.3-34.614-27.439-53.165H331.81Z" transform="translate(-16.5 -19)" fill="#231f20" opacity="0.095"/>
+          <path id="Path_6" data-name="Path 6" d="M238.106,288.741,107.508,18.5H32" transform="translate(202.079 -18.5)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="15"/>
+          <path id="Path_7" data-name="Path 7" d="M192.458,200.706,99.481,22.5H22" transform="translate(61.064 37.906)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="15"/>
+          <path id="Path_8" data-name="Path 8" d="M18,163.414H229.422L365.336,27.5H184.117Z" transform="translate(4.658 108.414)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="15"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>
