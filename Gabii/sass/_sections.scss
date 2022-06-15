@@ -1,0 +1,109 @@
+.tytul1--absolute {
+    position: absolute;
+    bottom: 15%;
+    left: 15%;
+    font-size: 4rem;
+    color: white;
+    font-family: 'Dancing Script';
+}
+.tytul4--absolute {
+    position: absolute;
+    bottom: 55%;
+    left: 10%;
+    font-size: 5rem;
+    color: white;
+    font-family: 'Dancing Script';
+}
+.tytul6--absolute {
+    position: absolute;
+    bottom: 60%;
+    left: 15%;
+    font-size: 5rem;
+    color: white;
+    font-family: 'Dancing Script';
+}
+.opis--ramka {
+    background-color: white;
+    //margin: 10px 10px;
+    padding: 15px 15px;
+    border-radius: 30px;
+    line-height: 1.3rem;
+}
+h3 {
+    margin-top: 40px;
+    font-size: 40px;
+    font-family: 'Dancing Script';
+}
+p{
+    line-height: 122%;
+    margin: 10px 10px;
+}
+//1 USTKA
+.ustka{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.ustka-zdjecie { 
+    grid-area: ustka-zdjecie;
+    position: relative; 
+}
+//3 STILO
+.stilo{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.stilo-zdjecie { 
+    grid-area: stilo-zdjecie;
+    position: relative; 
+}
+//5 JASTARNIA
+.jastarnia{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.jastarnia-zdjecie { 
+    grid-area: jastarnia-zdjecie;
+    position: relative; 
+}
+.jastarnia--absolute {
+    position: absolute;
+    bottom: -5%;
+    left: 5%;
+    font-size: 6rem;
+    color: rgb(10, 10, 10);
+    font-family: 'Dancing Script';
+    font-size: 5rem;
+}
+//2 CZLOPIN
+.czlopin{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.czlopin-zdjecie { 
+    grid-area: czlopin-zdjecie;
+    position: relative; 
+}
+//4 ROZEWIE
+.rozewie{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+} 
+.rozewie-zdjecie { 
+    grid-area: rozewie-zdjecie;
+    position: relative; 
+}
+//6 HEL
+.hel{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.hel-zdjecie { 
+    grid-area: hel-zdjecie;
+    position: relative; 
+}
