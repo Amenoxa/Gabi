@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1102" height="1102" viewBox="0 0 1102 1102">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #cbe01b;
+      }
+    </style>
+  </defs>
+  <circle id="Elipsa_1" data-name="Elipsa 1" cx="551" cy="551" r="551"/>
+  <circle id="Elipsa_2" data-name="Elipsa 2" class="cls-1" cx="551" cy="551" r="155"/>
+  <circle id="Elipsa_3" data-name="Elipsa 3" class="cls-1" cx="551" cy="229" r="38"/>
+  <circle id="Elipsa_3-2" data-name="Elipsa 3" class="cls-1" cx="551" cy="873" r="38"/>
+  <circle id="Elipsa_3-3" data-name="Elipsa 3" class="cls-1" cx="229" cy="551" r="38"/>
+  <circle id="Elipsa_3-4" data-name="Elipsa 3" class="cls-1" cx="873" cy="551" r="38"/>
+</svg>

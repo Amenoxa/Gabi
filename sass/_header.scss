@@ -1,0 +1,146 @@
+// NAVBAR
+.menu {
+    flex-basis: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    height: 12vh;
+    min-height: 60px;
+    justify-content: stretch;
+    position: fixed;
+    width: 100%;
+    z-index: +2;
+    box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.87);
+    background-color: rgb(247,206,96);
+
+    &__list {
+        list-style-type: none;
+        display: flex;
+        flex-basis: 100%;
+        justify-content: center;
+    }
+    
+
+    &__item {
+        display: block;
+        align-self: center; 
+    }
+    &__link {
+        padding-left: 15px;
+        padding-right: 15px;
+        text-decoration: none;
+        display: block;
+        font-size: 20px;
+        &:hover {
+            color: rgba(248, 248, 248, 0.932);
+        }
+        
+    }
+
+}
+
+// HEADER
+
+.header {  
+        padding-top: 15vh;
+        display: flex;
+        flex-wrap: wrap;
+        flex-basis: 100vw;
+        justify-content: center;
+}
+.licznik__obraz {
+    max-width: 80px; 
+}
+.zdjecie {
+    max-width: 300px;
+    margin-bottom: 20px;
+} 
+h1 {
+    font-family: 'Dancing Script';
+    font-size: 35px;
+    color: green;
+    letter-spacing: 0.6rem;
+    flex-basis: 100%;
+}
+h2 {
+    font-family: 'Dancing Script';
+    font-size: 35px;
+    color: rgb(255, 255, 255);
+    letter-spacing: 0.2rem;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    }
+    .tytul2 {
+    flex-basis: 100%;
+    display: flex;
+    justify-content: center;
+}
+.text--padding {
+    padding-left: 6rem;
+    font-family: 'Dancing Script';
+    letter-spacing: 0.6rem;
+    
+}
+      
+
+//ROWER
+.rower { 
+    grid-area: rower; 
+    position: fixed;
+    z-index: +99;
+  }
+.rower__all {
+    position: relative;
+    @media only screen and (max-width: 1500px) {
+        display: none;  
+    }
+    
+}
+
+.rower__kolo-l {
+    position: absolute;
+    width: 250px;
+    top: 150px;
+    left: 455px;
+    animation-name: rotate;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+        @media only screen and (max-width: 600px) {
+            width: 30px;
+            top: 0px;
+            left: 30px;   
+        }
+    
+}
+.rower__kolo-p {
+    position: absolute;
+    width: 250px;
+    left: 35px;
+    top: 150px;
+    animation-name: rotate;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+        @media only screen and (max-width: 600px) {
+            width: 30px;
+            top: 0px;
+            left: -30px;   
+        }
+}
+
+@keyframes rotate{
+    from{ transform: rotate(-360deg); }
+    to{ transform: rotate(360deg); }
+}
+
+.rower__rama {
+    position: absolute;
+    top:  -29px;
+    left: 94px;
+    @media only screen and (max-width: 600px) {
+        width: 80px;
+        top: -30px;
+        left: -25px;   
+    }
+}
+

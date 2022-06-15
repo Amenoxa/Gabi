@@ -1,0 +1,67 @@
+.footer {
+    position: relative;
+}
+.footer h1 { 
+    font-size: 30px;
+    letter-spacing: 0.2rem;
+    margin-left: 10px;
+    }
+.footer p {
+    padding-top: 10%;
+    padding-right: 30%;
+}
+.footer-opis { grid-area: footer-opis; }
+  
+  .footer-lighthouse { 
+    z-index: +33;
+    grid-area: footer-lighthouse; 
+    position: absolute;
+    right: 50px;
+    bottom: 0px;
+    @media only screen and (max-width: 600px) {
+        right: 0px;
+        bottom: 0px;
+    }
+    }
+  
+
+
+//LIGHTHOUSE
+#sun,
+#sun-inner,
+#sun-outer {
+  transform-origin: center;
+  transform-box: fill-box;
+  -webkit-animation: pulse 2.5s ease-in-out infinite;
+          animation: pulse 2.5s ease-in-out infinite;
+}
+#sun {
+  fill: #ffebca;
+}
+#sun-inner {
+  fill: rgba(255,235,202,0.5);
+}
+#sun-outer {
+  fill: rgba(255,235,202,0.25);
+}
+#sun-inner,
+#sun-outer {
+  -webkit-animation-delay: 0.2s;
+          animation-delay: 0.2s;
+}
+@-webkit-keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.3);
+  }
+}
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.3);
+  }
+}
