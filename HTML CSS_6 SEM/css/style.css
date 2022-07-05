@@ -6,19 +6,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Square+Peg&display=swap');
 
 
-
+html {overflow-x: hidden;}
 
 body {background-color: rgb(246,205,96);
 	font-family: 'Roboto', sans-serif; 
 	width: 100vw;}
 
 
-@media only screen and (min-width:1200px){
-	body{
-		background: url("../img/tło_rower.svg");
-		background-size: cover;
-	}
-}
+
 
 nav{
 	display: flex;
@@ -75,7 +70,7 @@ h1{font-family: "Square Peg";
 
 h2{font-family: "Square Peg";
 	font-size: 70px;
-	
+	text-align: end;
 	
 }
 
@@ -83,34 +78,72 @@ h2{font-family: "Square Peg";
 	flex-basis: 100%;
 }
 
-.tytul1{
+.tytul{
 	flex-basis: 100%;
+	margin:40px 30px;
+	text-align: end;
+	line-height: 0.9;
 }
 
 .tytul2{
 	flex-basis: 100%;
 	justify-content: flex-end;
+	margin-right: 50px;
 
+}
+
+.header_licznik 
+	{display: flex;
+	flex-basis: 100%;
+	justify-content: center;}
+
+.licznik{
+	max-width: 100px;
+	flex-basis: 30%;
+	margin: 30px 8px;
+}
+
+.licznik1, .licznik2, .licznik3 {
+	position: relative;
+}
+
+
+h4{
+	position: absolute;
+	top:82px;
+	left: 20px;
+	font-family: "Sen";
+	font-size: 18px;
+	color: white;
+}
+
+h5{
+	position: absolute;
+	top:50px;
+	left: 18px;
+	text-justify: center;
+	font-family: "Sen";
+	font-size: 15px;
+	font-weight: 600;
+	color: #1F4A00;
 }
 
 /* animacja koła */
 
 .header_rower{
-	z-index: +20;
+	z-index: 0;
 	position: fixed;
-	}
+	width: 100vh;}
 
 .rower{
 	position: relative;
-	/*display: none;*/
 	}
 
 .kolo_left{
 	position: absolute;
 	top:100px;
-	left: 60px;
-	transform: scale(0.1);
-	width: 10vw;
+	left: 45%;
+	width: 60px;
 	animation-name: rotate;
 	animation-duration: 7s;
 	animation-iteration-count: infinite;
@@ -120,9 +153,8 @@ h2{font-family: "Square Peg";
 .kolo_right{
 	position: absolute;
 	top:200px;
-	left: 60px;
-	transform: scale(0.1);
-	width: 10vw;
+	left: 45%;
+	width: 60px;
 	animation-name: rotate;
 	animation-duration: 7s;
 	animation-iteration-count: infinite;
@@ -130,23 +162,415 @@ h2{font-family: "Square Peg";
 	}
 
 .rama
-	{transform: rotate(90deg) scale(0.5);
+	{transform: rotate(90deg);
 	  position: absolute;
-	  top:100px;
-	  left: 60px;}
+	  top:135px;
+	  left: 45%;
+	width: 120px;}
 
 @keyframes rotate{
 	from{transform: rotate(-360deg);}
 	to{transform: rotate(360deg);}
 }
 /* ustka */
+h3{font-family:"Square Peg";
+	font-size: 90px;}
+.zielony{color: #1F4A00;}
+
+.znaczek{max-width: 280px;}
+
+.ramkaW{background-color: white;
+		border-radius: 10px;
+		padding: 25px;
+		text-align: start;}
+
+.ramkaY{background-color: #F7CE60;
+		border-radius: 10px;
+		padding: 25px;}
 .ustka{
 	display:flex;
 	flex-wrap: wrap;
-	justify-content: center;
+	justify-content: flex-end;
+	background-color: #FAFAFA;
+	padding: 20px;
+	z-index: -300;
 }
+
+.ustka_znaczek{
+	flex-basis: 100%;
+	display: flex;
+	justify-content: flex-end;
+}
+
+.ustka_opis{
+	font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, "sans-serif";
+	font-size: 18px;
+	line-height: 1.5rem;
+	text-align: start;
+	max-width: 300px;
+}
+
+.ustka_tekst{
+	font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, "sans-serif";
+	font-size: 16px;
+	line-height: 1.5rem;
+	text-align: start;
+	max-width: 300px;
+	padding: 10px;
+	margin: 30px 0px 15px 0px;
+	position: relative;
+	
+}
+
+.ustka_info{
+	position: absolute;
+	top: -20px;
+	left: -25px;
+	max-width: 150px;
+	display: none;
+}
+
+.ustka_info_m{
+	position: absolute;
+	top: -30px;
+	left: -90px;
+	max-width: 150px;
+}
+
 /* czolpino */
+
+.czolpino{
+	display:flex;
+	flex-wrap: wrap;
+	justify-content: flex-end;
+	background-color: #F7CE60;;
+	padding: 20px;
+}
+
+.czolpino_znaczek{
+	flex-basis: 100%;
+	display: flex;
+	justify-content: flex-end;
+}
+
+
+.czolpino_opis{
+	font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, "sans-serif";
+	font-size: 18px;
+	line-height: 1.5rem;
+	text-align: start;
+	max-width: 300px;
+}
+
+.czolpino_tekst{
+	font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, "sans-serif";
+	font-size: 16px;
+	line-height: 1.5rem;
+	text-align: start;
+	max-width: 300px;
+	padding: 10px;
+	margin: 30px 0px 15px 0px;
+	position: relative;
+}
+
+.czolpino_info{
+	position: absolute;
+	top: -20px;
+	left: -25px;
+	max-width: 150px;
+	display: none;
+}
+
+.czolpino_info_m{
+	position: absolute;
+	top: -30px;
+	left: -90px;
+	max-width: 150px;
+}
+
 /* stilo */
+.stilo{
+	display:flex;
+	flex-wrap: wrap;
+	justify-content: flex-end;
+	background-color: #FAFAFA;
+	padding: 20px;
+}
+
+.stilo_znaczek{
+	flex-basis: 100%;
+	display: flex;
+	justify-content: flex-end;
+}
+
+
+.stilo_opis{
+	font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, "sans-serif";
+	font-size: 18px;
+	line-height: 1.5rem;
+	text-align: start;
+	max-width: 300px;
+}
+
+.stilo_tekst{
+	font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, "sans-serif";
+	font-size: 16px;
+	line-height: 1.5rem;
+	text-align: start;
+	max-width: 300px;
+	padding: 10px;
+	margin: 30px 0px 15px 0px;
+	position: relative;
+}
+
+.stilo_info{
+	position: absolute;
+	top: -20px;
+	left: -25px;
+	max-width: 150px;
+	display: none;
+}
+
+.stilo_info_m{
+	position: absolute;
+	top: -30px;
+	left: -90px;
+	max-width: 150px;
+}
+
 /* rozewie */
+
+.rozewie{
+	display:flex;
+	flex-wrap: wrap;
+	justify-content: flex-end;
+	background-color: #F7CE60;;
+	padding: 20px;
+}
+
+.rozewie_znaczek{
+	flex-basis: 100%;
+	display: flex;
+	justify-content: flex-end;
+}
+
+
+.rozewie_opis{
+	font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, "sans-serif";
+	font-size: 18px;
+	line-height: 1.5rem;
+	text-align: start;
+	max-width: 300px;
+}
+
+.rozewie_tekst{
+	font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, "sans-serif";
+	font-size: 16px;
+	line-height: 1.5rem;
+	text-align: start;
+	max-width: 300px;
+	padding: 10px;
+	margin: 30px 0px 15px 0px;
+	position: relative;
+}
+
+.rozewie_info{
+	position: absolute;
+	top: -20px;
+	left: -25px;
+	max-width: 150px;
+	display: none;
+}
+
+.rozewie_info_m{
+	position: absolute;
+	top: -30px;
+	left: -90px;
+	max-width: 150px;
+}
+
 /* jastarnia */
-/* ahel */
+.jastarnia{
+	display:flex;
+	flex-wrap: wrap;
+	justify-content: flex-end;
+	background-color: #FAFAFA;
+	padding: 20px;
+}
+
+.jastarnia_znaczek{
+	flex-basis: 100%;
+	display: flex;
+	justify-content: flex-end;
+}
+
+
+.jastarnia_opis{
+	font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, "sans-serif";
+	font-size: 18px;
+	line-height: 1.5rem;
+	text-align: start;
+	max-width: 300px;
+}
+
+.jastarnia_tekst{
+	font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, "sans-serif";
+	font-size: 16px;
+	line-height: 1.5rem;
+	text-align: start;
+	max-width: 300px;
+	padding: 10px;
+	margin: 30px 0px 15px 0px;
+	position: relative;
+}
+
+.jastarnia_info{
+	position: absolute;
+	top: -20px;
+	left: -25px;
+	max-width: 150px;
+	display: none;
+}
+
+.jastarnia_info_m{
+	position: absolute;
+	top: -30px;
+	left: -90px;
+	max-width: 150px;
+}
+
+/* hel */
+.hel{
+	display:flex;
+	flex-wrap: wrap;
+	justify-content: flex-end;
+	background-color: #F7CE60;;
+	padding: 20px;
+}
+
+.hel_znaczek{
+	flex-basis: 100%;
+	display: flex;
+	justify-content: flex-end;
+}
+
+
+.hel_opis{
+	font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, "sans-serif";
+	font-size: 18px;
+	line-height: 1.5rem;
+	text-align: start;
+	max-width: 300px;
+}
+
+.hel_tekst{
+	font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, "sans-serif";
+	font-size: 16px;
+	line-height: 1.5rem;
+	text-align: start;
+	max-width: 300px;
+	padding: 10px;
+	margin: 30px 0px 15px 0px;
+	position: relative;
+}
+
+.hel_info{
+	position: absolute;
+	top: -20px;
+	left: -25px;
+	max-width: 150px;
+	display: none;
+}
+
+.hel_info_m{
+	position: absolute;
+	top: -30px;
+	left: -90px;
+	max-width: 150px;
+}
+
+footer {  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1.4fr 1fr 0.4fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    ". footer_tytul"
+    ". footer_napis"
+    "footer_some footer_some";
+}
+
+.footer_tytul { grid-area: footer_tytul; }
+
+.footer_napis { grid-area: footer_napis; 
+	margin: 10px;}
+
+.footer_some { 
+	grid-area: footer_some; 
+	box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.4);
+	background-color: rgb(246,205,96);
+	width: 100%;
+	display: flex;
+	justify-content: center;}
+
+
+.footerh1{
+	font-size: 60px;
+	line-height: 1.2;
+}
+
+.zmiana2{
+	color: black;
+}
+
+h6{
+	width: 300px;
+	font-family: "Sen";
+	font-size: 20px;
+	line-height: 1.3;
+	padding: 30px 10px;
+}
+
+.some{
+	width: 50px;
+	padding: 20px
+}
+
+.some:hover {width:55px;}
+
+/*RESPONSYWNOŚĆ*/
+
+
+@media only screen and (min-width:1200px){
+	body{
+		background: url("../img/tło_rower.svg");
+		background-size: cover;
+	}
+	.ustka, .czolpino, .stilo, .rozewie, .jastarnia, .hel {background-color: transparent;}
+	
+	.znaczek{
+		max-width: 500px;
+	}
+	.ustka{  display: grid;
+  grid-template-columns: 0.8fr 1.1fr 1.1fr;
+  grid-template-rows: 0.6fr 1.4fr 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    ". ustka_tytul ustka_znaczek"
+    ". ustka_opis ustka_znaczek"
+    ". ustka_tekst ustka_licznik";
+}
+
+.ustka_znaczek { grid-area: ustka_znaczek; }
+
+.ustka_tytul { grid-area: ustka_tytul; }
+
+.ustka_opis { grid-area: ustka_opis; }
+
+.ustka_tekst { grid-area: ustka_tekst; }
+
+.ustka_licznik { grid-area: ustka_licznik; }
+
+	
+}
