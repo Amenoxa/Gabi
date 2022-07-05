@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="178" height="134" viewBox="0 0 178 134">
+  <defs>
+    <filter id="Path_18" x="-5" y="32" width="187" height="109" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <clipPath id="clip-Info_1">
+      <rect width="178" height="134"/>
+    </clipPath>
+  </defs>
+  <g id="Info_1" data-name="Info – 1" clip-path="url(#clip-Info_1)">
+    <g id="Group_93" data-name="Group 93" transform="translate(-321 -724)">
+      <g transform="matrix(1, 0, 0, 1, 321, 724)" filter="url(#Path_18)">
+        <path id="Path_18-2" data-name="Path 18" d="M26,0H143a26,26,0,0,1,26,26V65a26,26,0,0,1-26,26H26A26,26,0,0,1,0,65V26A26,26,0,0,1,26,0Z" transform="translate(4 38)" fill="#b10000"/>
+      </g>
+      <path id="Path_20" data-name="Path 20" d="M25.366,0H139.515a25.611,25.611,0,0,1,25.366,25.849V64.623a25.611,25.611,0,0,1-25.366,25.849H25.366A25.611,25.611,0,0,1,0,64.623V25.849A25.611,25.611,0,0,1,25.366,0Z" transform="translate(325 758)" fill="#bc0000"/>
+      <path id="Path_17" data-name="Path 17" d="M16,0H153a16,16,0,0,1,16,16V69a16,16,0,0,1-16,16H16A16,16,0,0,1,0,69V16A16,16,0,0,1,16,0Z" transform="translate(325 729)" fill="#f2f2f2"/>
+      <path id="Path_19" data-name="Path 19" d="M15.61,0H149.271a15.376,15.376,0,0,1,15.61,15.131v50.12a15.376,15.376,0,0,1-15.61,15.131H15.61A15.376,15.376,0,0,1,0,65.251V15.131A15.376,15.376,0,0,1,15.61,0Z" transform="translate(325 729)" fill="#fff"/>
+    </g>
+  </g>
+</svg>
