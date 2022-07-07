@@ -1,0 +1,74 @@
+/*RESPONSYWNOŚĆ*/
+
+
+@media only screen and (min-width:1200px){
+	body{
+		background: url("../img/tło_rower.svg");
+		background-size: cover;
+	}
+	.ustka, .czolpino, .stilo, .rozewie, .jastarnia, .hel {background-color: transparent;}
+	
+	.znaczek{
+		max-width: 450px;     /*WIELKOSC ZNACZKA i LICZNIKA (BO MAJA TA SAMA KLASE, W RAZIE CO WYSTARCZY LICZNIKOWI ZMIENIC KLASE NA INNA)*/
+	}
+	.ustka{  
+		margin-top: 8vw;      /*MARGINES GORNY SEKCJI*/
+		margin-bottom: 8vw;   /*MARGINES DOLNY SEKCJI*/
+		display: grid;
+		grid-template-columns: 0.8fr 1.1fr 0.9fr;       /*SZEROKOSC KOLUMN (PIERWSZA PUSTA)*/
+		grid-template-rows: 0.2fr 0.3fr 0.9fr 1.4fr;    /*WYSOKOSC WIERSZY*/
+		gap: 0px 0px;
+		grid-auto-flow: row;
+		grid-template-areas:
+		". ustka_tytul ustka_znaczek"
+		". ustka_opis ustka_znaczek"
+		". ustka_tekst ustka_znaczek"
+		". ustka_tekst ustka_licznik";
+}
+.ustka_info{                  /*POKAZANIE DRUGIEGO ZNACZKA INFO*/
+	position: absolute;
+	top: -30px;
+	left: -30px;
+	max-width: 150px;
+	display: block;
+}
+.ustka_info_m{                /*SCHOWANIE PIERWSZEGO INFO*/
+	display: none;
+}
+
+.ustka_znaczek { 
+	grid-area: ustka_znaczek;
+	align-items: start;         /*PRZYPIECIE ZNACZKA DO GORY SIATKI GRIDA (W PIONIE)*/
+	justify-self: center;       /*PRZYPIECIE ZNACZKA DO SRODKA SIATKI GRIDA (W POZIOMIE)*/
+	 }
+
+.ustka_tytul { 
+	grid-area: ustka_tytul; 
+	justify-self: end;}        /*PRZYPIECIE TYTULU DO KONCA SIATKI GRIDA (W POZIOMIE)*/
+
+.ustka_opis { 
+	grid-area: ustka_opis;
+	justify-self: end;        /*PRZYPIECIE OPISU DO KONCA SIATKI GRIDA (W POZIOMIE)*/
+	text-align: end;          /*WYJUSTOWANIE TEKSTU DO PRAWEJ*/
+	padding-top: 20px;
+	max-width: 315px;}        /*ZMIANA SZEROKOSCI DIVa */
+
+.ustka_tekst { 
+	grid-area: ustka_tekst;
+	justify-self: end;       /*PRZYPIECIE TEKSTU Z RAMKA DO KONCA SIATKI GRIDA (W POZIOMIE)*/
+	max-width: 400px;        /*ZMIANA SZEROKOSCI DIVa */
+	padding: 0px;
+	 }
+.ustka_tekst p {
+	background-color: white;  /*ZMIANA KOLORU RAMKI TEKSTU */
+	padding: 20px;            /*WIELKOSC RAMKI */
+}
+
+.ustka_licznik { 
+	margin-top: 20px;
+	grid-area: ustka_licznik;
+	justify-self: center;     /*PRZYPIECIE LICZNIKA DO SRODKA SIATKI GRIDA (W POZIOMIE)*/
+	 }
+
+	
+}
