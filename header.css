@@ -1,0 +1,78 @@
+/* header */
+header {  display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 2.2fr 0.4fr 0.4fr;
+	gap: 0px 0px;
+	grid-auto-flow: row;
+	grid-template-areas:
+	  ". tytul"
+	  ". tytul2"
+	  ". header_licznik";
+	padding-top: 15vh;
+  }
+  
+  .tytul { 
+	grid-area: tytul;
+	margin:40px 30px;
+	line-height: 0.9;
+	justify-self: center; 
+  }
+  
+  .tytul2 { 
+	grid-area: tytul2; 
+	justify-self: center;
+}
+  
+  .header_licznik { 
+	grid-area: header_licznik;
+	justify-content: center; 
+	display: flex;}
+  
+h1{font-family: "Square Peg";
+	font-size: 100px;
+	color: #235300;
+}
+
+.zmiana{
+	color: black;
+	padding-left: 6rem;
+}
+
+h2{font-family: "Square Peg";
+	font-size: 70px;
+	text-align: end;
+	
+}
+
+
+
+.licznik{
+	max-width: 100px;
+	flex-basis: 30%;
+	margin: 30px 8px;
+}
+
+.licznik1, .licznik2, .licznik3 {
+	position: relative;
+}
+
+
+h4{
+	position: absolute;
+	top:82px;
+	left: 20px;
+	font-family: "Sen";
+	font-size: 18px;
+	color: white;
+}
+
+h5{
+	position: absolute;
+	top:50px;
+	left: 18px;
+	text-justify: center;
+	font-family: "Sen";
+	font-size: 15px;
+	font-weight: 600;
+	color: #1F4A00;
+}
